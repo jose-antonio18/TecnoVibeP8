@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntas Frecuentes - Empresa Ficticia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #00aaff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .faq {
+      background-color: #111;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 10px #00aaff33;
+    }
+
+    .faq:hover {
+      background-color: #222;
+    }
+
+    .faq h3 {
+      margin: 0;
+      color: #00aaff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .respuesta {
+      margin-top: 10px;
+      display: none;
+      color: #ddd;
+    }
+
+    .faq.abierto .respuesta {
+      display: block;
+    }
+
+    .icono {
+      font-size: 1.2em;
+      transition: transform 0.3s ease;
+    }
+
+    .faq.abierto .icono {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Preguntas Frecuentes</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="faq-container">
+
+    <div class="faq">
+      <h3>¿Cómo puedo agendar una cita? <span class="icono">▶</span></h3>
+      <div class="respuesta">Puedes agendar una cita desde nuestra página de contacto o llamando al número indicado.</div>
+    </div>
+
+    <div class="faq">
+      <h3>¿Cuáles son los métodos de pago aceptados? <span class="icono">▶</span></h3>
+      <div class="respuesta">Aceptamos tarjetas de crédito, transferencias bancarias y pagos en efectivo.</div>
+    </div>
+
+    <div class="faq">
+      <h3>¿Ofrecen garantía en sus servicios? <span class="icono">▶</span></h3>
+      <div class="respuesta">Sí, ofrecemos garantía de satisfacción en todos nuestros servicios durante los primeros 30 días.</div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('abierto');
+      });
+    });
+  </script>
+
+</body>
+</html>

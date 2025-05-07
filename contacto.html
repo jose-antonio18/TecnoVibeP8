@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Empresa Ficticia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #00aaff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .contacto {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00aaff33;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #00aaff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #00aaff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .info {
+      margin-top: 30px;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .info p, .info a {
+      margin: 10px 0;
+      color: #ccc;
+    }
+
+    .info a {
+      text-decoration: none;
+      color: #00aaff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="contacto">
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="info">
+      <p><strong>Teléfono:</strong> +52 238 101 0621</p>
+      <p><strong>Correo:</strong> TecnoVibe@gmail.com</p>
+      <p><strong>Redes Sociales:</strong></p>
+      <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
